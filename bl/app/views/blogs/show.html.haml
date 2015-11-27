@@ -1,0 +1,27 @@
+
+
+%p#notice= notice
+%h1 Backlog
+
+%p
+  %b ID:
+  = @blog.n
+%p
+  %b Название:
+  = @blog.name
+%p
+  %b Важность:
+  = @blog.importance
+%p
+  %b Предварительная оценка:
+  = @blog.preestimate
+%p
+  %b Как продемонстрировать?:
+  = @blog.demo
+%p
+  %b Примечания:
+  = @blog.comment
+
+= link_to 'Править', edit_blog_path(@blog)
+\|
+= link_to 'Назад', blogs_path

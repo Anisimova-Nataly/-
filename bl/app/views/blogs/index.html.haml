@@ -1,0 +1,31 @@
+%h1 Список Backlog-ов
+
+%table
+  %thead
+    %tr
+      %th ID
+      %th Название
+      %th Важность
+      %th Предваритетьная оценка
+      %th Как продемонстрировать?
+      %th Примечания
+      %th
+      %th
+      %th
+
+  %tbody
+    - @blogs.each do |blog|
+      %tr
+        %td= blog.n
+        %td= blog.name
+        %td= blog.importance
+        %td= blog.preestimate
+        %td= blog.demo
+        %td= blog.comment
+        %td= link_to 'Показать', blog
+        %td= link_to 'Править', edit_blog_path(blog)
+        %td= link_to 'Удалить', blog, :method => :delete, :data => { :confirm => 'Вы уверены,что хотите удалить Backlog?' }
+
+%br
+
+= link_to 'Создать новый', new_blog_path

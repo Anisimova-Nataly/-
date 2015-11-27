@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  'n': 1
+  name: MyString
+  importance: 1.5
+  preestimate: 1.5
+  demo: MyString
+  comment: MyString
+
+two:
+  'n': 1
+  name: MyString
+  importance: 1.5
+  preestimate: 1.5
+  demo: MyString
+  comment: MyString
